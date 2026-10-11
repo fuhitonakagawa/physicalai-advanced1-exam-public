@@ -1,0 +1,683 @@
+{
+  "selection": "full seed 42; hybrid seeds 42, 43, 44; one execution each; all four trials included",
+  "source_files": [
+    {
+      "path": "v3-ramen-smolvla/src/__init__.py",
+      "sha256": "743490382991134049ab0bb7de6cc37c6fd2cb2c2e8c88298ec296bf114a0276"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/logging.py",
+      "sha256": "dcc2252b478d30175f62c97a1c337ff1b2e3b93b0cd0feee0e307ecd636c4350"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/settings.py",
+      "sha256": "6a680dc018d0aad8971b15d68ef5e26cab5a8bc41ac6bbafc7e6fe266aa4f6b7"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/control.py",
+      "sha256": "722bf22d2a62f612a212c49a567a88ee10532a9105e4096092bb46a8fdc16f82"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/ramen.py",
+      "sha256": "27508669972b46618b60c61d5d908b92705e4242a01e28641e44049fb7db3a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/scene.py",
+      "sha256": "81cd1858ce85de0d30869de075b11cb9050e71dfbfe794c347fc0b0bb183e500"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/runner.py",
+      "sha256": "a0738507f1940c758c8ab024e131c322e9f3e9858cfed6fa98bda19fdb5f6659"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/types.py",
+      "sha256": "bf6ecfdb1d4fc23a3be940d83b547be55702b2c5fc9b15d6ad5d4ba4a5be5a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/pipeline.py",
+      "sha256": "022c14c92158c59851d2a1c6600275a0530bc316ded4a1ff78cef85cf7028461"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/recording.py",
+      "sha256": "d85d2ccd05bc7b522c032db3a0433467bd7cef0afa103b89614453fa98d1c1b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/input/instruction.txt",
+      "sha256": "ac533eb5e88c886b597d385f6ce1feb104a617c69e62992f73b0b6d178178126"
+    },
+    {
+      "path": "v3-ramen-smolvla/pyproject.toml",
+      "sha256": "d04a2ffe09a95f013ccadee8a5f580812fdfafb998eb89cea41a54359e4eaef1"
+    },
+    {
+      "path": "v3-ramen-smolvla/uv.lock",
+      "sha256": "3bc733bf0ec4d6948ce72292bd355ea6bed23c0cbd8f0ad3a1507b68aafbe9c8"
+    },
+    {
+      "path": "v3-ramen-smolvla/.env.example",
+      "sha256": "09c42cc757d1813032ff9bbc52cd637cbbc9a72ff8788e14c94bd615aae02dd6"
+    },
+    {
+      "path": "v3-ramen-smolvla/assets/manifest.json",
+      "sha256": "a74c1d7756886ed8042406bb282c515d4681bb425ba6c64364206e6751b32585"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/__init__.py",
+      "sha256": "7491c465a539282547099bb2744ee3fe2f589ea814ef8264f6b239f47d59ec64"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/logging.py",
+      "sha256": "1e98199ffaf9f9003d1b545ed1864d16c66f264b9b25604fb29f208d6d92f0cc"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/settings.py",
+      "sha256": "2c7e505c565829d5c9656a6fa8dae0ada77f4a5ff13fddc459a027287d9b7a55"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/control.py",
+      "sha256": "003245bf929c6e867137622d69ea21950cf8a10b8154799463a5be5ba1e0f913"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/ramen.py",
+      "sha256": "dec51426d6944f8a9d3320357d249c460263c920e958fcd16d058141d3b963f9"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/scene.py",
+      "sha256": "23b7d0b2e0d7be9a051d126ed9406599717c569d8fffa50cbb41ba92912c6a78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/hybrid.py",
+      "sha256": "918f5b4a51ed35973244e8cceb9ddf8ef5945382d723cfb409c340d03a939f61"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/types.py",
+      "sha256": "4f252705724d9fb1fe9ba86674c6199885eca76028f60b247e0670fdbd021180"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/pipeline.py",
+      "sha256": "4c8208f3dd62c50edeb75d23b2a8aeb0b27076c8e40cf1d349c874093528a791"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/recording.py",
+      "sha256": "d272b9ef0016056d6f32b189203806c4f13b0e5de43f807588140ad616cba2f0"
+    },
+    {
+      "path": "v4-hybrid-ramen/input/tasks.json",
+      "sha256": "d36fe9173dcd870a20e7523253d74fb4b43eaea4b5144f568031bba812a7b4a9"
+    },
+    {
+      "path": "v4-hybrid-ramen/pyproject.toml",
+      "sha256": "f1a72261bbd06ea58280e1c391f430ea8e4fad3c4a644ac5468df60cccf9f192"
+    },
+    {
+      "path": "v4-hybrid-ramen/uv.lock",
+      "sha256": "9e5cb76d25037c13fdf8fc68407438c85d95b84344af1a4f92c39a35ac1cadfc"
+    },
+    {
+      "path": "v4-hybrid-ramen/.env.example",
+      "sha256": "7b011189247fe8be3c16a6d4954e344bf377e4da9cdcdb6dba8b294582fd6e6b"
+    },
+    {
+      "path": "v4-hybrid-ramen/assets/manifest.json",
+      "sha256": "a74c1d7756886ed8042406bb282c515d4681bb425ba6c64364206e6751b32585"
+    }
+  ],
+  "experiments": [
+    {
+      "trial": "01 全推論",
+      "seed": 42,
+      "directory": "evidence/full/20261011-150609",
+      "settings": {
+        "device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "log_level": "INFO",
+        "seed": 42,
+        "max_steps": 400,
+        "action_steps": 10,
+        "denoising_steps": 10
+      },
+      "result": {
+        "status": "evaluated",
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "parameter_device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "instruction": "Put the egg from the left tray into the bowl, then put the fish cake from the right tray into the bowl.",
+        "trained_for_this_task": false,
+        "result": {
+          "seed": 42,
+          "initial_state_index": null,
+          "success": false,
+          "steps": 400,
+          "clipped_values": 80,
+          "wall_seconds": 120.5018628329999
+        },
+        "ingredients": {
+          "egg": {
+            "served": false,
+            "lifted": false,
+            "position": [
+              -0.1263022203600002,
+              -0.22683360344771536,
+              0.833632818152634
+            ]
+          },
+          "fish_cake": {
+            "served": false,
+            "lifted": false,
+            "position": [
+              -0.13012708558405933,
+              0.2128266248670297,
+              0.8288911360621731
+            ]
+          }
+        }
+      },
+      "raw_video_sha256": "3914761a77af78700219afa35562c7b975200f9d299097ab2c6b4ded4149cdff",
+      "telemetry_sha256": "13a6437226b99ac812ac9f35312ea94a068cd3b0298dbfd416c8b24a78dd9df2"
+    },
+    {
+      "trial": "02 ルール＋推論 / 試行1",
+      "seed": 42,
+      "directory": "evidence/hybrid-42/20261011-150821",
+      "settings": {
+        "device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "log_level": "INFO",
+        "seed": 42,
+        "grasp_max_steps": 120,
+        "grasp_control": "gripper",
+        "approach_clearance": 0.005,
+        "rule_move_seconds": 2.0,
+        "action_steps": 10,
+        "denoising_steps": 10
+      },
+      "result": {
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "renderer": "ray",
+        "control": "hybrid",
+        "grasp_control": "gripper",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "gripper"
+        ],
+        "tasks": [
+          {
+            "food": "egg",
+            "instruction": "pick up the egg"
+          },
+          {
+            "food": "fish_cake",
+            "instruction": "pick up the fish cake"
+          }
+        ],
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 17,
+            "contact_candidate": true,
+            "lift_verified": true
+          },
+          {
+            "food": "fish_cake",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 7,
+            "contact_candidate": true,
+            "lift_verified": true
+          }
+        ],
+        "success": true,
+        "ingredients": {
+          "egg": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.12556705603721938,
+              -0.030602939866767157,
+              0.8877525493462971
+            ]
+          },
+          "fish_cake": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.05561463673861108,
+              0.030470544467665863,
+              0.8828901823417865
+            ]
+          }
+        }
+      },
+      "raw_video_sha256": "ca82b3d539cc5e5e7edf9169731ab5c37612adeeed122cc47fdec4bbf01167a6",
+      "telemetry_sha256": "e67c5c04759104f13ec5197af6e21924871a490a16f9e9d4728b695e4153529f"
+    },
+    {
+      "trial": "03 ルール＋推論 / 試行2",
+      "seed": 43,
+      "directory": "evidence/hybrid-43/20261011-150957",
+      "settings": {
+        "device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "log_level": "INFO",
+        "seed": 43,
+        "grasp_max_steps": 120,
+        "grasp_control": "gripper",
+        "approach_clearance": 0.005,
+        "rule_move_seconds": 2.0,
+        "action_steps": 10,
+        "denoising_steps": 10
+      },
+      "result": {
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "renderer": "ray",
+        "control": "hybrid",
+        "grasp_control": "gripper",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "gripper"
+        ],
+        "tasks": [
+          {
+            "food": "egg",
+            "instruction": "pick up the egg"
+          },
+          {
+            "food": "fish_cake",
+            "instruction": "pick up the fish cake"
+          }
+        ],
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 43,
+            "contact_candidate": true,
+            "lift_verified": true
+          },
+          {
+            "food": "fish_cake",
+            "success": false,
+            "reason": "transfer_failed",
+            "inference_steps": 13,
+            "contact_candidate": true,
+            "lift_verified": true
+          }
+        ],
+        "success": false,
+        "ingredients": {
+          "egg": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.12176798535181083,
+              -0.03914448846022826,
+              0.8881023493587938
+            ]
+          },
+          "fish_cake": {
+            "served": false,
+            "lifted": true,
+            "position": [
+              -0.135666519146114,
+              0.22864168283908,
+              0.8293923194442193
+            ]
+          }
+        }
+      },
+      "raw_video_sha256": "d87126b3a37539cd46235a1318a92da18a27d4ad7bae6c7d466a094199a46323",
+      "telemetry_sha256": "471557c29087f7db8c665b0560b634e36083829bb6a02dc720d17621399d50a4"
+    },
+    {
+      "trial": "04 ルール＋推論 / 試行3",
+      "seed": 44,
+      "directory": "evidence/hybrid-44/20261011-151127",
+      "settings": {
+        "device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "log_level": "INFO",
+        "seed": 44,
+        "grasp_max_steps": 120,
+        "grasp_control": "gripper",
+        "approach_clearance": 0.005,
+        "rule_move_seconds": 2.0,
+        "action_steps": 10,
+        "denoising_steps": 10
+      },
+      "result": {
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "renderer": "ray",
+        "control": "hybrid",
+        "grasp_control": "gripper",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "gripper"
+        ],
+        "tasks": [
+          {
+            "food": "egg",
+            "instruction": "pick up the egg"
+          },
+          {
+            "food": "fish_cake",
+            "instruction": "pick up the fish cake"
+          }
+        ],
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 14,
+            "contact_candidate": true,
+            "lift_verified": true
+          },
+          {
+            "food": "fish_cake",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 7,
+            "contact_candidate": true,
+            "lift_verified": true
+          }
+        ],
+        "success": true,
+        "ingredients": {
+          "egg": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.1257624805290606,
+              -0.02943298384801529,
+              0.8876554560408249
+            ]
+          },
+          "fish_cake": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.0630415562734662,
+              0.030469732822267084,
+              0.8828899232472394
+            ]
+          }
+        }
+      },
+      "raw_video_sha256": "552d4a2ad5aaa7070e2b19e20bff5503991476cacf8aeee1b132a60f3158d0ff",
+      "telemetry_sha256": "268bb814b91dfc90cc1aa80e3aaa79223346927ea029f91184073c83980233fc"
+    }
+  ],
+  "submission_source_files": [
+    {
+      "path": "v3-ramen-smolvla/src/__init__.py",
+      "sha256": "743490382991134049ab0bb7de6cc37c6fd2cb2c2e8c88298ec296bf114a0276"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/logging.py",
+      "sha256": "dcc2252b478d30175f62c97a1c337ff1b2e3b93b0cd0feee0e307ecd636c4350"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/settings.py",
+      "sha256": "6a680dc018d0aad8971b15d68ef5e26cab5a8bc41ac6bbafc7e6fe266aa4f6b7"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/control.py",
+      "sha256": "722bf22d2a62f612a212c49a567a88ee10532a9105e4096092bb46a8fdc16f82"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/ramen.py",
+      "sha256": "27508669972b46618b60c61d5d908b92705e4242a01e28641e44049fb7db3a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/scene.py",
+      "sha256": "81cd1858ce85de0d30869de075b11cb9050e71dfbfe794c347fc0b0bb183e500"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/runner.py",
+      "sha256": "a0738507f1940c758c8ab024e131c322e9f3e9858cfed6fa98bda19fdb5f6659"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/types.py",
+      "sha256": "bf6ecfdb1d4fc23a3be940d83b547be55702b2c5fc9b15d6ad5d4ba4a5be5a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/pipeline.py",
+      "sha256": "022c14c92158c59851d2a1c6600275a0530bc316ded4a1ff78cef85cf7028461"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/recording.py",
+      "sha256": "d85d2ccd05bc7b522c032db3a0433467bd7cef0afa103b89614453fa98d1c1b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/input/instruction.txt",
+      "sha256": "ac533eb5e88c886b597d385f6ce1feb104a617c69e62992f73b0b6d178178126"
+    },
+    {
+      "path": "v3-ramen-smolvla/pyproject.toml",
+      "sha256": "d04a2ffe09a95f013ccadee8a5f580812fdfafb998eb89cea41a54359e4eaef1"
+    },
+    {
+      "path": "v3-ramen-smolvla/uv.lock",
+      "sha256": "3bc733bf0ec4d6948ce72292bd355ea6bed23c0cbd8f0ad3a1507b68aafbe9c8"
+    },
+    {
+      "path": "v3-ramen-smolvla/.env.example",
+      "sha256": "5eb54675e2074c3a6c50554b6ed3b79d5b61486a5d7e9bfa0e54012f96a14dbe"
+    },
+    {
+      "path": "v3-ramen-smolvla/assets/manifest.json",
+      "sha256": "a74c1d7756886ed8042406bb282c515d4681bb425ba6c64364206e6751b32585"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/__init__.py",
+      "sha256": "7491c465a539282547099bb2744ee3fe2f589ea814ef8264f6b239f47d59ec64"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/logging.py",
+      "sha256": "1e98199ffaf9f9003d1b545ed1864d16c66f264b9b25604fb29f208d6d92f0cc"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/settings.py",
+      "sha256": "2c7e505c565829d5c9656a6fa8dae0ada77f4a5ff13fddc459a027287d9b7a55"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/control.py",
+      "sha256": "003245bf929c6e867137622d69ea21950cf8a10b8154799463a5be5ba1e0f913"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/ramen.py",
+      "sha256": "dec51426d6944f8a9d3320357d249c460263c920e958fcd16d058141d3b963f9"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/scene.py",
+      "sha256": "23b7d0b2e0d7be9a051d126ed9406599717c569d8fffa50cbb41ba92912c6a78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/hybrid.py",
+      "sha256": "918f5b4a51ed35973244e8cceb9ddf8ef5945382d723cfb409c340d03a939f61"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/types.py",
+      "sha256": "4f252705724d9fb1fe9ba86674c6199885eca76028f60b247e0670fdbd021180"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/pipeline.py",
+      "sha256": "4c8208f3dd62c50edeb75d23b2a8aeb0b27076c8e40cf1d349c874093528a791"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/recording.py",
+      "sha256": "d272b9ef0016056d6f32b189203806c4f13b0e5de43f807588140ad616cba2f0"
+    },
+    {
+      "path": "v4-hybrid-ramen/input/tasks.json",
+      "sha256": "d36fe9173dcd870a20e7523253d74fb4b43eaea4b5144f568031bba812a7b4a9"
+    },
+    {
+      "path": "v4-hybrid-ramen/pyproject.toml",
+      "sha256": "f1a72261bbd06ea58280e1c391f430ea8e4fad3c4a644ac5468df60cccf9f192"
+    },
+    {
+      "path": "v4-hybrid-ramen/uv.lock",
+      "sha256": "9e5cb76d25037c13fdf8fc68407438c85d95b84344af1a4f92c39a35ac1cadfc"
+    },
+    {
+      "path": "v4-hybrid-ramen/.env.example",
+      "sha256": "410ade3417ff0289da3cfa9a319a3fa93dd313aaf44edf19a1466161a952e943"
+    },
+    {
+      "path": "v4-hybrid-ramen/assets/manifest.json",
+      "sha256": "a74c1d7756886ed8042406bb282c515d4681bb425ba6c64364206e6751b32585"
+    }
+  ]
+}

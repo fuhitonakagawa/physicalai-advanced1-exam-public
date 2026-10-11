@@ -1,0 +1,997 @@
+{
+  "selection": "剛体全推論seed42、MuJoCo剛体の成功seed42と失敗seed43、MuJoCo軟体の成功seed42、Genesis軟体の失敗seed42の順に代表例を収録。MuJoCo剛体・軟体の集計は各seed42・43・44の3試行。未収録試行の元映像と判定もevidenceに含む。",
+  "editing": "説明画面を除き全区間を2倍速。区間の省略・軌道の生成・成功判定の変更はない。",
+  "duration_seconds": 140.933333,
+  "trials": [
+    {
+      "id": "full",
+      "start_seconds": 4.0,
+      "end_seconds": 14.0,
+      "playback_speed": 2,
+      "source_duration_seconds": 20.05,
+      "source_project": "v3-ramen-smolvla",
+      "evidence": "evidence/full",
+      "source_video_sha256": "3914761a77af78700219afa35562c7b975200f9d299097ab2c6b4ded4149cdff",
+      "result": {
+        "status": "evaluated",
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "parameter_device": "cpu",
+        "renderer": "ray",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "instruction": "Put the egg from the left tray into the bowl, then put the fish cake from the right tray into the bowl.",
+        "trained_for_this_task": false,
+        "result": {
+          "seed": 42,
+          "initial_state_index": null,
+          "success": false,
+          "steps": 400,
+          "clipped_values": 80,
+          "wall_seconds": 120.5018628329999
+        },
+        "ingredients": {
+          "egg": {
+            "served": false,
+            "lifted": false,
+            "position": [
+              -0.1263022203600002,
+              -0.22683360344771536,
+              0.833632818152634
+            ]
+          },
+          "fish_cake": {
+            "served": false,
+            "lifted": false,
+            "position": [
+              -0.13012708558405933,
+              0.2128266248670297,
+              0.8288911360621731
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "rigid-42",
+      "start_seconds": 14.0,
+      "end_seconds": 34.833332999999996,
+      "playback_speed": 2,
+      "source_duration_seconds": 41.7,
+      "source_project": "v4-hybrid-ramen",
+      "evidence": "evidence/rigid-42",
+      "source_video_sha256": "ca82b3d539cc5e5e7edf9169731ab5c37612adeeed122cc47fdec4bbf01167a6",
+      "result": {
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "renderer": "ray",
+        "control": "hybrid",
+        "grasp_control": "gripper",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "gripper"
+        ],
+        "tasks": [
+          {
+            "food": "egg",
+            "instruction": "pick up the egg"
+          },
+          {
+            "food": "fish_cake",
+            "instruction": "pick up the fish cake"
+          }
+        ],
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 17,
+            "contact_candidate": true,
+            "lift_verified": true
+          },
+          {
+            "food": "fish_cake",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 7,
+            "contact_candidate": true,
+            "lift_verified": true
+          }
+        ],
+        "success": true,
+        "ingredients": {
+          "egg": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.12556705603721938,
+              -0.030602939866767157,
+              0.8877525493462971
+            ]
+          },
+          "fish_cake": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.05561463673861108,
+              0.030470544467665863,
+              0.8828901823417865
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "rigid-43",
+      "start_seconds": 34.833332999999996,
+      "end_seconds": 53.099999999999994,
+      "playback_speed": 2,
+      "source_duration_seconds": 36.55,
+      "source_project": "v4-hybrid-ramen",
+      "evidence": "evidence/rigid-43",
+      "source_video_sha256": "d87126b3a37539cd46235a1318a92da18a27d4ad7bae6c7d466a094199a46323",
+      "result": {
+        "physical_task_evaluated": true,
+        "device": "cpu",
+        "renderer": "ray",
+        "control": "hybrid",
+        "grasp_control": "gripper",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "gripper"
+        ],
+        "tasks": [
+          {
+            "food": "egg",
+            "instruction": "pick up the egg"
+          },
+          {
+            "food": "fish_cake",
+            "instruction": "pick up the fish cake"
+          }
+        ],
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "inference_steps": 43,
+            "contact_candidate": true,
+            "lift_verified": true
+          },
+          {
+            "food": "fish_cake",
+            "success": false,
+            "reason": "transfer_failed",
+            "inference_steps": 13,
+            "contact_candidate": true,
+            "lift_verified": true
+          }
+        ],
+        "success": false,
+        "ingredients": {
+          "egg": {
+            "served": true,
+            "lifted": true,
+            "position": [
+              -0.12176798535181083,
+              -0.03914448846022826,
+              0.8881023493587938
+            ]
+          },
+          "fish_cake": {
+            "served": false,
+            "lifted": true,
+            "position": [
+              -0.135666519146114,
+              0.22864168283908,
+              0.8293923194442193
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mujoco-42",
+      "start_seconds": 53.099999999999994,
+      "end_seconds": 84.89999999999999,
+      "playback_speed": 2,
+      "source_duration_seconds": 63.65,
+      "source_project": "v6-mujoco-soft",
+      "evidence": "evidence/mujoco-42",
+      "source_video_sha256": "518877b719f65461b524bc36884ebf1e350ea77280d2014401cdab24a65fbe6c",
+      "result": {
+        "simulator": "mujoco",
+        "soft_model": "flex_trilinear_elasticity",
+        "policy_evaluated": true,
+        "policy_device": "cpu",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "model_outputs_used": [
+          "closure_trigger"
+        ],
+        "gripper_control": "contact_assisted",
+        "seed": 42,
+        "episode_complete": true,
+        "success": true,
+        "results": [
+          {
+            "food": "egg",
+            "success": true,
+            "reason": "served",
+            "attempts": 1,
+            "model_steps": 1,
+            "assisted_steps": 56,
+            "ai_triggered_closure": true,
+            "max_deformation_rms": 0.0007132844688813175
+          },
+          {
+            "food": "fish_cake",
+            "success": true,
+            "reason": "served",
+            "attempts": 1,
+            "model_steps": 1,
+            "assisted_steps": 43,
+            "ai_triggered_closure": true,
+            "max_deformation_rms": 0.0016550684513544768
+          }
+        ],
+        "ingredients": {
+          "egg": {
+            "position": [
+              -0.06707521073269167,
+              -0.04158736198663568,
+              0.8876264876983446
+            ],
+            "speed": 1.0168473734879392e-05,
+            "finger_contacts": false,
+            "stable_steps": 675,
+            "bounds_min": [
+              -0.09065359661208977,
+              -0.06466699091112683,
+              0.8703673092463988
+            ],
+            "bounds_max": [
+              -0.043507196242876855,
+              -0.018503784887585435,
+              0.90488615945633
+            ],
+            "grasp_quaternion": [
+              0.0,
+              0.9266618270939547,
+              -0.37589607367847505,
+              0.0
+            ],
+            "half_width": 0.019663005611525446,
+            "left_load": 0.0,
+            "right_load": 0.0,
+            "deformation_rms": 0.0001437627654277049,
+            "vertex_count": 99,
+            "contact_kind": "flex_contact_force"
+          },
+          "fish_cake": {
+            "position": [
+              -0.05962563446868513,
+              0.032027734133709344,
+              0.8833378662706289
+            ],
+            "speed": 7.41248669621445e-05,
+            "finger_contacts": false,
+            "stable_steps": 46,
+            "bounds_min": [
+              -0.0841030216868075,
+              0.0075466914860988854,
+              0.8704683354762627
+            ],
+            "bounds_max": [
+              -0.03514663806414753,
+              0.056508496697110965,
+              0.8962124788360557
+            ],
+            "grasp_quaternion": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "half_width": 0.02448090260550604,
+            "left_load": 0.0,
+            "right_load": 0.0,
+            "deformation_rms": 0.00013614806201547432,
+            "vertex_count": 99,
+            "contact_kind": "flex_contact_force"
+          }
+        },
+        "max_deformation_rms": {
+          "egg": 0.0007132844688813175,
+          "fish_cake": 0.0016550684513544768
+        }
+      }
+    },
+    {
+      "id": "genesis-42",
+      "start_seconds": 84.89999999999999,
+      "end_seconds": 134.933333,
+      "playback_speed": 2,
+      "source_duration_seconds": 100.1,
+      "source_project": "v7-ros-genesis-soft",
+      "evidence": "evidence/genesis-42",
+      "source_video_sha256": "d4a0dc2a19598217abbdc234a8b5f42e72a812b234ce18f686181382a26fa14b",
+      "result": {
+        "status": "evaluated",
+        "simulator": "genesis",
+        "genesis_backend": "metal",
+        "ros_connected": true,
+        "policy_device": "mps:0",
+        "model_id": "HuggingFaceVLA/smolvla_libero",
+        "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+        "trained_for_this_task": false,
+        "model_outputs_used": [
+          "closure_trigger"
+        ],
+        "policy_evaluated": true,
+        "soft_model": "FEM_linear_corotated",
+        "gripper_control": "contact_assisted",
+        "success": false,
+        "results": [
+          {
+            "food": "egg",
+            "success": false,
+            "reason": "lift_failed",
+            "attempts": 3,
+            "model_steps": 12,
+            "assisted_steps": 130,
+            "ai_triggered_closure": true,
+            "max_deformation_rms": 0.0002097465095394311
+          },
+          {
+            "food": "fish_cake",
+            "success": false,
+            "reason": "transfer_failed",
+            "attempts": 2,
+            "model_steps": 7,
+            "assisted_steps": 35,
+            "ai_triggered_closure": true,
+            "max_deformation_rms": 0.0017056382599869146
+          }
+        ],
+        "ingredients": {
+          "egg": {
+            "position": [
+              -0.12661219026587053,
+              -0.22752269821868967,
+              0.8311261778168716
+            ],
+            "speed": 2.980232056870591e-05,
+            "finger_contacts": false,
+            "stable_steps": 0,
+            "bounds_min": [
+              -0.1497764140367508,
+              -0.2521161735057831,
+              0.8160001039505005
+            ],
+            "bounds_max": [
+              -0.10359445214271545,
+              -0.2031371146440506,
+              0.8493784666061401
+            ],
+            "grasp_quaternion": [
+              0.0,
+              0.8994392440247266,
+              -0.437045817172786,
+              0.0
+            ],
+            "half_width": 0.020094056504951635,
+            "left_load": 4.44760416939971e-06,
+            "right_load": 1.5999233937691315e-07,
+            "deformation_rms": 0.0002039916497036296,
+            "vertex_count": 377,
+            "contact_kind": "vertex_proximity_and_drive_force"
+          },
+          "fish_cake": {
+            "position": [
+              -0.06452770328614861,
+              -0.01074500145705315,
+              1.0557320259511471
+            ],
+            "speed": 0.012810383242617678,
+            "finger_contacts": false,
+            "stable_steps": 0,
+            "bounds_min": [
+              -0.08245719969272614,
+              -0.037730298936367035,
+              1.030057430267334
+            ],
+            "bounds_max": [
+              -0.04654775559902191,
+              0.01618272066116333,
+              1.0911945104599
+            ],
+            "grasp_quaternion": [
+              0.0,
+              0.777848629488253,
+              -0.6284516764264748,
+              0.0
+            ],
+            "half_width": 0.014644961825856664,
+            "left_load": 4.44760416939971e-06,
+            "right_load": 1.5999233937691315e-07,
+            "deformation_rms": 0.0006942338863042423,
+            "vertex_count": 320,
+            "contact_kind": "vertex_proximity_and_drive_force"
+          }
+        }
+      }
+    }
+  ],
+  "evaluation_groups": {
+    "mujoco_rigid": {
+      "trial_count": 3,
+      "success_count": 2,
+      "failure_count": 1,
+      "trials": [
+        {
+          "seed": 42,
+          "evidence": "evidence/rigid-42",
+          "success": true
+        },
+        {
+          "seed": 43,
+          "evidence": "evidence/rigid-43",
+          "success": false
+        },
+        {
+          "seed": 44,
+          "evidence": "evidence/rigid-44",
+          "success": true
+        }
+      ]
+    },
+    "mujoco_soft": {
+      "trial_count": 3,
+      "success_count": 3,
+      "failure_count": 0,
+      "trials": [
+        {
+          "seed": 42,
+          "evidence": "evidence/mujoco-42",
+          "success": true
+        },
+        {
+          "seed": 43,
+          "evidence": "evidence/mujoco-43",
+          "success": true
+        },
+        {
+          "seed": 44,
+          "evidence": "evidence/mujoco-44",
+          "success": true
+        }
+      ]
+    }
+  },
+  "submission_source_files": [
+    {
+      "path": "v3-ramen-smolvla/.env.example",
+      "sha256": "5eb54675e2074c3a6c50554b6ed3b79d5b61486a5d7e9bfa0e54012f96a14dbe"
+    },
+    {
+      "path": "v3-ramen-smolvla/pyproject.toml",
+      "sha256": "d04a2ffe09a95f013ccadee8a5f580812fdfafb998eb89cea41a54359e4eaef1"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/__init__.py",
+      "sha256": "743490382991134049ab0bb7de6cc37c6fd2cb2c2e8c88298ec296bf114a0276"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/logging.py",
+      "sha256": "dcc2252b478d30175f62c97a1c337ff1b2e3b93b0cd0feee0e307ecd636c4350"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/config/settings.py",
+      "sha256": "6a680dc018d0aad8971b15d68ef5e26cab5a8bc41ac6bbafc7e6fe266aa4f6b7"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/control.py",
+      "sha256": "722bf22d2a62f612a212c49a567a88ee10532a9105e4096092bb46a8fdc16f82"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/ramen.py",
+      "sha256": "27508669972b46618b60c61d5d908b92705e4242a01e28641e44049fb7db3a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/environment/scene.py",
+      "sha256": "81cd1858ce85de0d30869de075b11cb9050e71dfbfe794c347fc0b0bb183e500"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/runner.py",
+      "sha256": "a0738507f1940c758c8ab024e131c322e9f3e9858cfed6fa98bda19fdb5f6659"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/experiment/types.py",
+      "sha256": "bf6ecfdb1d4fc23a3be940d83b547be55702b2c5fc9b15d6ad5d4ba4a5be5a39"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/pipeline.py",
+      "sha256": "022c14c92158c59851d2a1c6600275a0530bc316ded4a1ff78cef85cf7028461"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v3-ramen-smolvla/src/recording.py",
+      "sha256": "d85d2ccd05bc7b522c032db3a0433467bd7cef0afa103b89614453fa98d1c1b6"
+    },
+    {
+      "path": "v3-ramen-smolvla/tests/__init__.py",
+      "sha256": "e853a24c73fcef830aeb01defc6b887e366a225afcd4209bea4a97626fadb260"
+    },
+    {
+      "path": "v3-ramen-smolvla/tests/conftest.py",
+      "sha256": "e746a7c5e9aa15c1cff785d80e3a1d905d9bb2df093ec66ffd5aee8fa7a46e70"
+    },
+    {
+      "path": "v3-ramen-smolvla/tests/test_alignment.py",
+      "sha256": "230db98ad75baa84c6e43c983d7e5abc29dd7cb30a1663a9e5b6e87dfc5a4f49"
+    },
+    {
+      "path": "v3-ramen-smolvla/tests/test_environment.py",
+      "sha256": "483e5aeafc59e9c5cce6fd65b216345598221d69b8fc16fd4364de432885acdd"
+    },
+    {
+      "path": "v3-ramen-smolvla/tests/test_pipeline.py",
+      "sha256": "cfda7cfa54a5f2dd70d515c56ac0ae45c531c3104c6d5d64bf7d5f0b0a36bcf3"
+    },
+    {
+      "path": "v3-ramen-smolvla/uv.lock",
+      "sha256": "3bc733bf0ec4d6948ce72292bd355ea6bed23c0cbd8f0ad3a1507b68aafbe9c8"
+    },
+    {
+      "path": "v4-hybrid-ramen/.env.example",
+      "sha256": "410ade3417ff0289da3cfa9a319a3fa93dd313aaf44edf19a1466161a952e943"
+    },
+    {
+      "path": "v4-hybrid-ramen/pyproject.toml",
+      "sha256": "f1a72261bbd06ea58280e1c391f430ea8e4fad3c4a644ac5468df60cccf9f192"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/__init__.py",
+      "sha256": "7491c465a539282547099bb2744ee3fe2f589ea814ef8264f6b239f47d59ec64"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/logging.py",
+      "sha256": "1e98199ffaf9f9003d1b545ed1864d16c66f264b9b25604fb29f208d6d92f0cc"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/config/settings.py",
+      "sha256": "2c7e505c565829d5c9656a6fa8dae0ada77f4a5ff13fddc459a027287d9b7a55"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/camera.py",
+      "sha256": "a88358bf6a63b9b04b4934ea172584e2d1ed93df08be3d7038c898009bb85c12"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/control.py",
+      "sha256": "003245bf929c6e867137622d69ea21950cf8a10b8154799463a5be5ba1e0f913"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/ramen.py",
+      "sha256": "dec51426d6944f8a9d3320357d249c460263c920e958fcd16d058141d3b963f9"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/environment/scene.py",
+      "sha256": "23b7d0b2e0d7be9a051d126ed9406599717c569d8fffa50cbb41ba92912c6a78"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/hybrid.py",
+      "sha256": "918f5b4a51ed35973244e8cceb9ddf8ef5945382d723cfb409c340d03a939f61"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/experiment/types.py",
+      "sha256": "4f252705724d9fb1fe9ba86674c6199885eca76028f60b247e0670fdbd021180"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/pipeline.py",
+      "sha256": "4c8208f3dd62c50edeb75d23b2a8aeb0b27076c8e40cf1d349c874093528a791"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v4-hybrid-ramen/src/recording.py",
+      "sha256": "d272b9ef0016056d6f32b189203806c4f13b0e5de43f807588140ad616cba2f0"
+    },
+    {
+      "path": "v4-hybrid-ramen/tests/__init__.py",
+      "sha256": "e853a24c73fcef830aeb01defc6b887e366a225afcd4209bea4a97626fadb260"
+    },
+    {
+      "path": "v4-hybrid-ramen/tests/conftest.py",
+      "sha256": "028941e2c4c91e31a73cf491ec2fa983890f112378bb0ab7ac73a4471047ce5a"
+    },
+    {
+      "path": "v4-hybrid-ramen/tests/test_alignment.py",
+      "sha256": "230db98ad75baa84c6e43c983d7e5abc29dd7cb30a1663a9e5b6e87dfc5a4f49"
+    },
+    {
+      "path": "v4-hybrid-ramen/tests/test_environment.py",
+      "sha256": "0b7b9c013806f8e50bc923f5fee65090e798b7c47f250222c5a0bcf9b40396bf"
+    },
+    {
+      "path": "v4-hybrid-ramen/tests/test_hybrid.py",
+      "sha256": "2b96849d14aa4a88c985bba91dadc395c5f1698f014ef774a742558582f1beef"
+    },
+    {
+      "path": "v4-hybrid-ramen/uv.lock",
+      "sha256": "9e5cb76d25037c13fdf8fc68407438c85d95b84344af1a4f92c39a35ac1cadfc"
+    },
+    {
+      "path": "v6-mujoco-soft/.env.example",
+      "sha256": "3dd0f44f6cdaf3c52439d230b5556f7661184d26f224544bfefe44166e160b5e"
+    },
+    {
+      "path": "v6-mujoco-soft/pyproject.toml",
+      "sha256": "c4908e1e32bf13a1273105b3e73387887b3d24cc0cd5c88ab33a9614894d847c"
+    },
+    {
+      "path": "v6-mujoco-soft/src/__init__.py",
+      "sha256": "7491c465a539282547099bb2744ee3fe2f589ea814ef8264f6b239f47d59ec64"
+    },
+    {
+      "path": "v6-mujoco-soft/src/config/__init__.py",
+      "sha256": "21e521e627b666be4d2ad02fb6b584949102b101393023451f293013f283df6f"
+    },
+    {
+      "path": "v6-mujoco-soft/src/config/logging.py",
+      "sha256": "1e98199ffaf9f9003d1b545ed1864d16c66f264b9b25604fb29f208d6d92f0cc"
+    },
+    {
+      "path": "v6-mujoco-soft/src/config/settings.py",
+      "sha256": "a1250670dd190bba7a022fc7921804322f6902a3c47a327c10f83c8dc2a9471d"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/__init__.py",
+      "sha256": "bbdb3f1bf892b8cbb4f844e28fa893f56dd82984bf9b34a39b4b790f0fea3d78"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/camera.py",
+      "sha256": "65e8ad65392091c780f98cce3bd5e981937fb32e06308a7d68781476e7a93637"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/control.py",
+      "sha256": "ed35f09ebdef1431d962a4290aee7d81743b290f736ae85f22efb47e008d4d1a"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/geometry.py",
+      "sha256": "eba59b66f6bcda09e157b79e899cb8fca5d45f90f4463273b6419e5b569e17b6"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/layout.py",
+      "sha256": "2f7f7cd655ac8e5a6db4a65ca02d786b572ead490b725a4151a010058a11cc7b"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/local.py",
+      "sha256": "d75a8b278fcdf7b9b8a463291eeaf82a6b8404d656150380cd95010c13a629bd"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/ramen.py",
+      "sha256": "f806bea9bc184a1611040b3b8c90e9f269d85d14c062fa96b6cde4ba8b73c827"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/scene.py",
+      "sha256": "c13d1c37cf3fb5c13c4f97d058d73c5637a16d0c0c31564521806fba94191ede"
+    },
+    {
+      "path": "v6-mujoco-soft/src/environment/soft_geometry.py",
+      "sha256": "df0b2d195a5d44e72e89acb3a245063f19520b717f9e586ecef739d2d4aa7118"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/__init__.py",
+      "sha256": "c43e3b2b4a2d8a8a342cfd98375cd6dda71115b0c00019bf571e8892ed0e872a"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/assisted.py",
+      "sha256": "8b4333522c12d5d4ebaea014b013bf1561db8ca9d68ba384c3477402cf38f9e7"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/images.py",
+      "sha256": "6b0688eda754cbce60f094b120b29b6ce6395627b2ccc43897c603d4e57c0589"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/messages.py",
+      "sha256": "2ac3579ce108fdb202119c26af282af5502ac8690310be13e72d16c67757d64c"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v6-mujoco-soft/src/experiment/types.py",
+      "sha256": "b7a51f20c96212ce46dd34199eff74c5e71dbb60043e0fef12ae973349a1331d"
+    },
+    {
+      "path": "v6-mujoco-soft/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v6-mujoco-soft/src/pipeline.py",
+      "sha256": "7fef3b548ec3e28a667dad0b976531b39ee211f79e66078b1169706f5e51999a"
+    },
+    {
+      "path": "v6-mujoco-soft/src/policy/__init__.py",
+      "sha256": "ffa70df9e811b4a52fe9814c8679942e17fe3849c42b973dc2055d8cf070ceaa"
+    },
+    {
+      "path": "v6-mujoco-soft/src/policy/smolvla.py",
+      "sha256": "1ddc55bc353e299a976e67e64a7486779f8472efcab80162fcb4133c316e60d4"
+    },
+    {
+      "path": "v6-mujoco-soft/src/recording.py",
+      "sha256": "d272b9ef0016056d6f32b189203806c4f13b0e5de43f807588140ad616cba2f0"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/__init__.py",
+      "sha256": "e853a24c73fcef830aeb01defc6b887e366a225afcd4209bea4a97626fadb260"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/conftest.py",
+      "sha256": "1d30f3d1b41848803f5e654d9083b31df71001b4c2b1da2d19f266411979438d"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/test_alignment.py",
+      "sha256": "2f1641270804c2adac342268a01dd707c53e41baed9d8ad2b0b94242804be857"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/test_assisted.py",
+      "sha256": "6e2b8a586b683df9bf0eb69d29646db73ef00b0d9380e4b40cc232134c524d4a"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/test_environment.py",
+      "sha256": "dad90049241d19de65c7b93e3ca720cfc609e3b7802a0ee319a78c045162c53e"
+    },
+    {
+      "path": "v6-mujoco-soft/tests/test_soft_geometry.py",
+      "sha256": "ecbd5c654a4248c9df660f678ea656d66856389c17d59e4569e03224f110da81"
+    },
+    {
+      "path": "v6-mujoco-soft/tools/build_soft_assets.py",
+      "sha256": "7ae0231be92795e0be69333a8c89d957adab12feaee8d4ecfe965d507606b3be"
+    },
+    {
+      "path": "v6-mujoco-soft/uv.lock",
+      "sha256": "fa11af5223a5f17c4313afee57ca17fbc54b1035bee49f82b43842fdb8aedbce"
+    },
+    {
+      "path": "v7-ros-genesis-soft/.env.example",
+      "sha256": "9e35f626d5d60ec62dd6b5d76f5426d98bc4cc1492cfca96f967bca4e7d0d38b"
+    },
+    {
+      "path": "v7-ros-genesis-soft/pyproject.toml",
+      "sha256": "abd5acadf3c2eea53c25c6ec7a3298ace7c7a8e6e894a825e2e8bf5df88a7993"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/config/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/config/logging.py",
+      "sha256": "1e98199ffaf9f9003d1b545ed1864d16c66f264b9b25604fb29f208d6d92f0cc"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/config/settings.py",
+      "sha256": "060551a04781529b192a664c9655bf6e8ce94c933438335d2c1bfe84752c994c"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/backend.py",
+      "sha256": "a35cc8b1c7705b2bafe6e1ba74f451d161714982b343d23fb85ea5c93b3270a7"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/contact.py",
+      "sha256": "6c0f0256ad6621aed4d610b43d03afc8375ade497e7e579896ceafa7661a993c"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/genesis_scene.py",
+      "sha256": "6e1069e6ca9a5d75656a786ef2c18496cb410056cf1f765e8f86ddfc42522edc"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/geometry.py",
+      "sha256": "eba59b66f6bcda09e157b79e899cb8fca5d45f90f4463273b6419e5b569e17b6"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/layout.py",
+      "sha256": "2f7f7cd655ac8e5a6db4a65ca02d786b572ead490b725a4151a010058a11cc7b"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/scene.py",
+      "sha256": "2a2523e7c15a5a4636aee811bb71a86e2bd38ffb4045208769726a15bcf0389a"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/environment/soft_geometry.py",
+      "sha256": "df0b2d195a5d44e72e89acb3a245063f19520b717f9e586ecef739d2d4aa7118"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/assisted.py",
+      "sha256": "4f8afd72fa2ca7a75a3b253c50dfec70f00b6b5e2edcf5277b09a5fc1255e3da"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/images.py",
+      "sha256": "6b0688eda754cbce60f094b120b29b6ce6395627b2ccc43897c603d4e57c0589"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/messages.py",
+      "sha256": "2ac3579ce108fdb202119c26af282af5502ac8690310be13e72d16c67757d64c"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/observations.py",
+      "sha256": "2201ce425cdfbabda608c796cb153408bdffa54a8b351c8c2342d46f5db79189"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/experiment/types.py",
+      "sha256": "b7a51f20c96212ce46dd34199eff74c5e71dbb60043e0fef12ae973349a1331d"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/main.py",
+      "sha256": "cc1575a00eb334bc5e0a5a57900a9aace71134a8a30175baeb79eb40e94656b6"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/pipeline.py",
+      "sha256": "3bc925d3d3a132a91df9cda57a016b3359bfd9f9c2a9d71f78ff1503ec65afde"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/policy/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/policy/smolvla.py",
+      "sha256": "3324ba6155efdf475083a712d32925280cd75a55fd29b6a234d19ba7bf2a1c25"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/recording.py",
+      "sha256": "d272b9ef0016056d6f32b189203806c4f13b0e5de43f807588140ad616cba2f0"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/ros/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/ros/bridge.py",
+      "sha256": "a28565351c9322097eee5e3f13f4bbaa843a4d7cf45832a79a84267fab31453e"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/ros/remote.py",
+      "sha256": "c549c3ea258ab2219dd2107b67362f1e5d7c0a19d6670cb53b0c6db03dbb2774"
+    },
+    {
+      "path": "v7-ros-genesis-soft/src/ros/simulation.py",
+      "sha256": "5f4dde229e5b2404a4d753e0540939ed3891eead0ad96befe179763e578d72ed"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/conftest.py",
+      "sha256": "a2841d5b4596147a88e0d780ca69e8c08cf78347c91cd72b01f3305bc6617c3f"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/environment/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/environment/test_contact.py",
+      "sha256": "d99b37ecb22790cbbb2c767437e6cf1151586e1370fb140593242c19f50bd105"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/environment/test_scene.py",
+      "sha256": "c9840a20ab4ca081ac7104c54fe14632dff49ab4dc3293775932839f1c2c2794"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/ros/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/ros/test_bridge.py",
+      "sha256": "6f2450139292608a270491f69b02d27e204bff4e7cc8c8cfe0be4ab3212975f7"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/ros/test_images.py",
+      "sha256": "94fd370fcab7da58cff695e24b960e1a6bdb9c4b9ca9fd21f1abff12cd5cc7f1"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/ros/test_messages.py",
+      "sha256": "ccbacbb1888830316cce7163a8172e4503fcc9d3d265524163453f3b3fe33c78"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/ros/test_remote.py",
+      "sha256": "64ee8abe257779f002746af947f1efc58d677d5629b4862b4f8fab99671d2ae8"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/test_assisted.py",
+      "sha256": "014ed57a325c8951a4a3d964bfa1623c383e65a8e8a15b569d257b6bc272bf15"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tests/test_soft_geometry.py",
+      "sha256": "ecbd5c654a4248c9df660f678ea656d66856389c17d59e4569e03224f110da81"
+    },
+    {
+      "path": "v7-ros-genesis-soft/tools/build_soft_assets.py",
+      "sha256": "7ae0231be92795e0be69333a8c89d957adab12feaee8d4ecfe965d507606b3be"
+    },
+    {
+      "path": "v7-ros-genesis-soft/uv.lock",
+      "sha256": "af82b508554a9e089542d6288cae62f1409de6e36774fb5c4e1290e4dfce5130"
+    }
+  ],
+  "limitations": "全推論は剛体、v6/v7は異なる弾性モデルと接触制御。描画・CPU/MPSも異なり、シミュレータ単独の性能比較ではない。"
+}

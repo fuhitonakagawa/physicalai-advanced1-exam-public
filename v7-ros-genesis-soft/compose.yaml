@@ -1,0 +1,18 @@
+name: ramen-v7
+services:
+  rosbridge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    platform: linux/arm64
+    ports:
+      - "127.0.0.1:9091:9090"
+    environment:
+      ROS_DOMAIN_ID: "43"
+      ROS_LOCALHOST_ONLY: "1"
+    healthcheck:
+      test: ["CMD-SHELL", ". /opt/ros/jazzy/setup.sh && ros2 service list | grep -q '^/rosapi/topics$'"]
+      interval: 5s
+      timeout: 10s
+      start_period: 20s
+      retries: 20

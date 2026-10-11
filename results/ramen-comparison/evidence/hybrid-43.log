@@ -1,0 +1,18 @@
+{"event": "model_loading", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:57.563847+09:00"}
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+{"event": "model_ready", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:03.594309+09:00"}
+{"phase": "RULE: approach", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:03.813501+09:00"}
+[transformers] Calling `crop` with a positive value is deprecated and will be removed in version 5.18. Please use a negative integer to remove that number of tokens from the cache instead.
+{"phase": "MODEL: gripper", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:17.511160+09:00"}
+{"phase": "RULE: lift check", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:27.922895+09:00"}
+{"phase": "RULE: carry", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:32.244585+09:00"}
+{"phase": "RULE: release", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:41.327233+09:00"}
+{"phase": "RULE: retreat", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:46.269353+09:00"}
+{"phase": "RULE: settle", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:50.874845+09:00"}
+{"success": true, "steps": 43, "event": "episode_finished", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:55.052832+09:00"}
+{"phase": "RULE: approach", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:10:55.148677+09:00"}
+{"phase": "MODEL: gripper", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:11:09.157645+09:00"}
+{"phase": "RULE: lift check", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:11:11.954057+09:00"}
+{"phase": "RULE: carry", "event": "phase_changed", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:11:16.311343+09:00"}
+{"success": false, "steps": 13, "event": "episode_finished", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:11:25.198500+09:00"}
+{"success": false, "event": "run_finished", "correlation_id": "83685c6b21da41bdaebbc17963966b89", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:11:25.220687+09:00"}

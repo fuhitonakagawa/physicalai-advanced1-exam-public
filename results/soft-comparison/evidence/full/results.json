@@ -1,0 +1,39 @@
+{
+  "status": "evaluated",
+  "physical_task_evaluated": true,
+  "device": "cpu",
+  "parameter_device": "cpu",
+  "renderer": "ray",
+  "model_id": "HuggingFaceVLA/smolvla_libero",
+  "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "instruction": "Put the egg from the left tray into the bowl, then put the fish cake from the right tray into the bowl.",
+  "trained_for_this_task": false,
+  "result": {
+    "seed": 42,
+    "initial_state_index": null,
+    "success": false,
+    "steps": 400,
+    "clipped_values": 80,
+    "wall_seconds": 120.5018628329999
+  },
+  "ingredients": {
+    "egg": {
+      "served": false,
+      "lifted": false,
+      "position": [
+        -0.1263022203600002,
+        -0.22683360344771536,
+        0.833632818152634
+      ]
+    },
+    "fish_cake": {
+      "served": false,
+      "lifted": false,
+      "position": [
+        -0.13012708558405933,
+        0.2128266248670297,
+        0.8288911360621731
+      ]
+    }
+  }
+}

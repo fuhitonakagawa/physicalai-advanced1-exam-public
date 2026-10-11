@@ -1,0 +1,52 @@
+[project]
+name = "physicalai-hybrid-ramen"
+version = "0.1.0"
+description = "ルールによる移動と推論による把持を組み合わせた盛り付け"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "defusedxml==0.7.1",
+    "lerobot[smolvla]==0.6.1",
+    "mujoco==3.15.0",
+    "numpy==2.2.6",
+    "pillow==12.3.0",
+    "pydantic==2.14.0",
+    "python-dotenv==1.2.4",
+    "structlog==26.1.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+
+[tool.uv]
+override-dependencies = [
+    "torch==2.14.1",
+    "torchvision==0.29.1",
+    "transformers==5.19.0",
+    "setuptools==84.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
+
+[dependency-groups]
+dev = [
+    "bandit==1.9.4",
+    "detect-secrets==1.5.0",
+    "mypy==2.4.0",
+    "pip-audit==2.10.1",
+    "pre-commit==4.6.2",
+    "pytest==9.1.1",
+    "pytest-cov==7.1.0",
+    "ruff==0.17.0",
+]
+

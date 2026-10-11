@@ -1,0 +1,21 @@
+{"event": "model_loading", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:21.768035+09:00"}
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+{"event": "model_ready", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:28.174139+09:00"}
+{"phase": "RULE: approach", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:28.399753+09:00"}
+[transformers] Calling `crop` with a positive value is deprecated and will be removed in version 5.18. Please use a negative integer to remove that number of tokens from the cache instead.
+{"phase": "MODEL: gripper", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:42.164698+09:00"}
+{"phase": "RULE: lift check", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:45.319889+09:00"}
+{"phase": "RULE: carry", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:49.677251+09:00"}
+{"phase": "RULE: release", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:58.763172+09:00"}
+{"phase": "RULE: retreat", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:03.704516+09:00"}
+{"phase": "RULE: settle", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:08.318534+09:00"}
+{"success": true, "steps": 17, "event": "episode_finished", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:12.552478+09:00"}
+{"phase": "RULE: approach", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:12.648371+09:00"}
+{"phase": "MODEL: gripper", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:26.604729+09:00"}
+{"phase": "RULE: lift check", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:27.289586+09:00"}
+{"phase": "RULE: carry", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:31.650727+09:00"}
+{"phase": "RULE: release", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:40.749450+09:00"}
+{"phase": "RULE: retreat", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:45.792539+09:00"}
+{"phase": "RULE: settle", "event": "phase_changed", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:50.433971+09:00"}
+{"success": true, "steps": 7, "event": "episode_finished", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:54.617613+09:00"}
+{"success": true, "event": "run_finished", "correlation_id": "2baba49c4cef4110a2c5d0728e978e17", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:09:54.629539+09:00"}

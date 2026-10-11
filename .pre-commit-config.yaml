@@ -1,0 +1,51 @@
+repos:
+  - repo: local
+    hooks:
+      - id: v3-ruff-format
+        name: v3 Python format
+        entry: uv run --locked --project v3-ramen-smolvla ruff format
+        language: system
+        types: [python]
+        files: ^v3-ramen-smolvla/
+      - id: v3-ruff-check
+        name: v3 Python lint
+        entry: uv run --locked --project v3-ramen-smolvla ruff check
+        language: system
+        types: [python]
+        files: ^v3-ramen-smolvla/
+      - id: v4-ruff-format
+        name: v4 Python format
+        entry: uv run --locked --project v4-hybrid-ramen ruff format
+        language: system
+        types: [python]
+        files: ^v4-hybrid-ramen/
+      - id: v4-ruff-check
+        name: v4 Python lint
+        entry: uv run --locked --project v4-hybrid-ramen ruff check
+        language: system
+        types: [python]
+        files: ^v4-hybrid-ramen/
+      - id: v6-ruff-format
+        name: v6 Python format
+        entry: uv run --locked --project v6-mujoco-soft ruff format
+        language: system
+        types: [python]
+        files: ^v6-mujoco-soft/
+      - id: v6-ruff-check
+        name: v6 Python check
+        entry: uv run --locked --project v6-mujoco-soft ruff check
+        language: system
+        types: [python]
+        files: ^v6-mujoco-soft/
+      - id: v7-ruff-format
+        name: v7 Python format
+        entry: uv run --locked --project v7-ros-genesis-soft ruff format
+        language: system
+        types: [python]
+        files: ^v7-ros-genesis-soft/
+      - id: v7-ruff-check
+        name: v7 Python check
+        entry: uv run --locked --project v7-ros-genesis-soft ruff check
+        language: system
+        types: [python]
+        files: ^v7-ros-genesis-soft/

@@ -1,0 +1,427 @@
+[
+  {
+    "id": "full",
+    "start_seconds": 4.0,
+    "end_seconds": 14.0,
+    "playback_speed": 2,
+    "source_duration_seconds": 20.05,
+    "source_project": "v3-ramen-smolvla",
+    "evidence": "evidence/full",
+    "source_video_sha256": "3914761a77af78700219afa35562c7b975200f9d299097ab2c6b4ded4149cdff",
+    "result": {
+      "status": "evaluated",
+      "physical_task_evaluated": true,
+      "device": "cpu",
+      "parameter_device": "cpu",
+      "renderer": "ray",
+      "model_id": "HuggingFaceVLA/smolvla_libero",
+      "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "instruction": "Put the egg from the left tray into the bowl, then put the fish cake from the right tray into the bowl.",
+      "trained_for_this_task": false,
+      "result": {
+        "seed": 42,
+        "initial_state_index": null,
+        "success": false,
+        "steps": 400,
+        "clipped_values": 80,
+        "wall_seconds": 120.5018628329999
+      },
+      "ingredients": {
+        "egg": {
+          "served": false,
+          "lifted": false,
+          "position": [
+            -0.1263022203600002,
+            -0.22683360344771536,
+            0.833632818152634
+          ]
+        },
+        "fish_cake": {
+          "served": false,
+          "lifted": false,
+          "position": [
+            -0.13012708558405933,
+            0.2128266248670297,
+            0.8288911360621731
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "rigid-42",
+    "start_seconds": 14.0,
+    "end_seconds": 34.833332999999996,
+    "playback_speed": 2,
+    "source_duration_seconds": 41.7,
+    "source_project": "v4-hybrid-ramen",
+    "evidence": "evidence/rigid-42",
+    "source_video_sha256": "ca82b3d539cc5e5e7edf9169731ab5c37612adeeed122cc47fdec4bbf01167a6",
+    "result": {
+      "physical_task_evaluated": true,
+      "device": "cpu",
+      "renderer": "ray",
+      "control": "hybrid",
+      "grasp_control": "gripper",
+      "model_id": "HuggingFaceVLA/smolvla_libero",
+      "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "trained_for_this_task": false,
+      "model_outputs_used": [
+        "gripper"
+      ],
+      "tasks": [
+        {
+          "food": "egg",
+          "instruction": "pick up the egg"
+        },
+        {
+          "food": "fish_cake",
+          "instruction": "pick up the fish cake"
+        }
+      ],
+      "results": [
+        {
+          "food": "egg",
+          "success": true,
+          "reason": "served",
+          "inference_steps": 17,
+          "contact_candidate": true,
+          "lift_verified": true
+        },
+        {
+          "food": "fish_cake",
+          "success": true,
+          "reason": "served",
+          "inference_steps": 7,
+          "contact_candidate": true,
+          "lift_verified": true
+        }
+      ],
+      "success": true,
+      "ingredients": {
+        "egg": {
+          "served": true,
+          "lifted": true,
+          "position": [
+            -0.12556705603721938,
+            -0.030602939866767157,
+            0.8877525493462971
+          ]
+        },
+        "fish_cake": {
+          "served": true,
+          "lifted": true,
+          "position": [
+            -0.05561463673861108,
+            0.030470544467665863,
+            0.8828901823417865
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "rigid-43",
+    "start_seconds": 34.833332999999996,
+    "end_seconds": 53.099999999999994,
+    "playback_speed": 2,
+    "source_duration_seconds": 36.55,
+    "source_project": "v4-hybrid-ramen",
+    "evidence": "evidence/rigid-43",
+    "source_video_sha256": "d87126b3a37539cd46235a1318a92da18a27d4ad7bae6c7d466a094199a46323",
+    "result": {
+      "physical_task_evaluated": true,
+      "device": "cpu",
+      "renderer": "ray",
+      "control": "hybrid",
+      "grasp_control": "gripper",
+      "model_id": "HuggingFaceVLA/smolvla_libero",
+      "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "trained_for_this_task": false,
+      "model_outputs_used": [
+        "gripper"
+      ],
+      "tasks": [
+        {
+          "food": "egg",
+          "instruction": "pick up the egg"
+        },
+        {
+          "food": "fish_cake",
+          "instruction": "pick up the fish cake"
+        }
+      ],
+      "results": [
+        {
+          "food": "egg",
+          "success": true,
+          "reason": "served",
+          "inference_steps": 43,
+          "contact_candidate": true,
+          "lift_verified": true
+        },
+        {
+          "food": "fish_cake",
+          "success": false,
+          "reason": "transfer_failed",
+          "inference_steps": 13,
+          "contact_candidate": true,
+          "lift_verified": true
+        }
+      ],
+      "success": false,
+      "ingredients": {
+        "egg": {
+          "served": true,
+          "lifted": true,
+          "position": [
+            -0.12176798535181083,
+            -0.03914448846022826,
+            0.8881023493587938
+          ]
+        },
+        "fish_cake": {
+          "served": false,
+          "lifted": true,
+          "position": [
+            -0.135666519146114,
+            0.22864168283908,
+            0.8293923194442193
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "mujoco-42",
+    "start_seconds": 53.099999999999994,
+    "end_seconds": 84.89999999999999,
+    "playback_speed": 2,
+    "source_duration_seconds": 63.65,
+    "source_project": "v6-mujoco-soft",
+    "evidence": "evidence/mujoco-42",
+    "source_video_sha256": "518877b719f65461b524bc36884ebf1e350ea77280d2014401cdab24a65fbe6c",
+    "result": {
+      "simulator": "mujoco",
+      "soft_model": "flex_trilinear_elasticity",
+      "policy_evaluated": true,
+      "policy_device": "cpu",
+      "model_id": "HuggingFaceVLA/smolvla_libero",
+      "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "model_outputs_used": [
+        "closure_trigger"
+      ],
+      "gripper_control": "contact_assisted",
+      "seed": 42,
+      "episode_complete": true,
+      "success": true,
+      "results": [
+        {
+          "food": "egg",
+          "success": true,
+          "reason": "served",
+          "attempts": 1,
+          "model_steps": 1,
+          "assisted_steps": 56,
+          "ai_triggered_closure": true,
+          "max_deformation_rms": 0.0007132844688813175
+        },
+        {
+          "food": "fish_cake",
+          "success": true,
+          "reason": "served",
+          "attempts": 1,
+          "model_steps": 1,
+          "assisted_steps": 43,
+          "ai_triggered_closure": true,
+          "max_deformation_rms": 0.0016550684513544768
+        }
+      ],
+      "ingredients": {
+        "egg": {
+          "position": [
+            -0.06707521073269167,
+            -0.04158736198663568,
+            0.8876264876983446
+          ],
+          "speed": 1.0168473734879392e-05,
+          "finger_contacts": false,
+          "stable_steps": 675,
+          "bounds_min": [
+            -0.09065359661208977,
+            -0.06466699091112683,
+            0.8703673092463988
+          ],
+          "bounds_max": [
+            -0.043507196242876855,
+            -0.018503784887585435,
+            0.90488615945633
+          ],
+          "grasp_quaternion": [
+            0.0,
+            0.9266618270939547,
+            -0.37589607367847505,
+            0.0
+          ],
+          "half_width": 0.019663005611525446,
+          "left_load": 0.0,
+          "right_load": 0.0,
+          "deformation_rms": 0.0001437627654277049,
+          "vertex_count": 99,
+          "contact_kind": "flex_contact_force"
+        },
+        "fish_cake": {
+          "position": [
+            -0.05962563446868513,
+            0.032027734133709344,
+            0.8833378662706289
+          ],
+          "speed": 7.41248669621445e-05,
+          "finger_contacts": false,
+          "stable_steps": 46,
+          "bounds_min": [
+            -0.0841030216868075,
+            0.0075466914860988854,
+            0.8704683354762627
+          ],
+          "bounds_max": [
+            -0.03514663806414753,
+            0.056508496697110965,
+            0.8962124788360557
+          ],
+          "grasp_quaternion": [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          "half_width": 0.02448090260550604,
+          "left_load": 0.0,
+          "right_load": 0.0,
+          "deformation_rms": 0.00013614806201547432,
+          "vertex_count": 99,
+          "contact_kind": "flex_contact_force"
+        }
+      },
+      "max_deformation_rms": {
+        "egg": 0.0007132844688813175,
+        "fish_cake": 0.0016550684513544768
+      }
+    }
+  },
+  {
+    "id": "genesis-42",
+    "start_seconds": 84.89999999999999,
+    "end_seconds": 134.933333,
+    "playback_speed": 2,
+    "source_duration_seconds": 100.1,
+    "source_project": "v7-ros-genesis-soft",
+    "evidence": "evidence/genesis-42",
+    "source_video_sha256": "d4a0dc2a19598217abbdc234a8b5f42e72a812b234ce18f686181382a26fa14b",
+    "result": {
+      "status": "evaluated",
+      "simulator": "genesis",
+      "genesis_backend": "metal",
+      "ros_connected": true,
+      "policy_device": "mps:0",
+      "model_id": "HuggingFaceVLA/smolvla_libero",
+      "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+      "trained_for_this_task": false,
+      "model_outputs_used": [
+        "closure_trigger"
+      ],
+      "policy_evaluated": true,
+      "soft_model": "FEM_linear_corotated",
+      "gripper_control": "contact_assisted",
+      "success": false,
+      "results": [
+        {
+          "food": "egg",
+          "success": false,
+          "reason": "lift_failed",
+          "attempts": 3,
+          "model_steps": 12,
+          "assisted_steps": 130,
+          "ai_triggered_closure": true,
+          "max_deformation_rms": 0.0002097465095394311
+        },
+        {
+          "food": "fish_cake",
+          "success": false,
+          "reason": "transfer_failed",
+          "attempts": 2,
+          "model_steps": 7,
+          "assisted_steps": 35,
+          "ai_triggered_closure": true,
+          "max_deformation_rms": 0.0017056382599869146
+        }
+      ],
+      "ingredients": {
+        "egg": {
+          "position": [
+            -0.12661219026587053,
+            -0.22752269821868967,
+            0.8311261778168716
+          ],
+          "speed": 2.980232056870591e-05,
+          "finger_contacts": false,
+          "stable_steps": 0,
+          "bounds_min": [
+            -0.1497764140367508,
+            -0.2521161735057831,
+            0.8160001039505005
+          ],
+          "bounds_max": [
+            -0.10359445214271545,
+            -0.2031371146440506,
+            0.8493784666061401
+          ],
+          "grasp_quaternion": [
+            0.0,
+            0.8994392440247266,
+            -0.437045817172786,
+            0.0
+          ],
+          "half_width": 0.020094056504951635,
+          "left_load": 4.44760416939971e-06,
+          "right_load": 1.5999233937691315e-07,
+          "deformation_rms": 0.0002039916497036296,
+          "vertex_count": 377,
+          "contact_kind": "vertex_proximity_and_drive_force"
+        },
+        "fish_cake": {
+          "position": [
+            -0.06452770328614861,
+            -0.01074500145705315,
+            1.0557320259511471
+          ],
+          "speed": 0.012810383242617678,
+          "finger_contacts": false,
+          "stable_steps": 0,
+          "bounds_min": [
+            -0.08245719969272614,
+            -0.037730298936367035,
+            1.030057430267334
+          ],
+          "bounds_max": [
+            -0.04654775559902191,
+            0.01618272066116333,
+            1.0911945104599
+          ],
+          "grasp_quaternion": [
+            0.0,
+            0.777848629488253,
+            -0.6284516764264748,
+            0.0
+          ],
+          "half_width": 0.014644961825856664,
+          "left_load": 4.44760416939971e-06,
+          "right_load": 1.5999233937691315e-07,
+          "deformation_rms": 0.0006942338863042423,
+          "vertex_count": 320,
+          "contact_kind": "vertex_proximity_and_drive_force"
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{"mode": "ray", "event": "run_started", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:09.601695+09:00"}
+{"event": "model_loading", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:09.846359+09:00"}
+[transformers] Model config: pad_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 128002. This may result in unexpected behavior.
+{"event": "model_ready", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:17.107054+09:00"}
+{"steps": 0, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:17.322886+09:00"}
+[transformers] Calling `crop` with a positive value is deprecated and will be removed in version 5.18. Please use a negative integer to remove that number of tokens from the cache instead.
+{"steps": 50, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:31.531773+09:00"}
+{"steps": 100, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:06:47.053192+09:00"}
+{"steps": 150, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:07:02.324000+09:00"}
+{"steps": 200, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:07:18.462204+09:00"}
+{"steps": 250, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:07:35.072549+09:00"}
+{"steps": 300, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:07:49.884106+09:00"}
+{"steps": 350, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:03.974650+09:00"}
+{"steps": 400, "event": "episode_progress", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:17.643704+09:00"}
+{"success": false, "steps": 400, "event": "run_finished", "correlation_id": "362dbd0fe2ea4b5caec07f4af0c4214d", "logger": "src.pipeline", "level": "info", "timestamp": "2026-10-11T15:08:17.661999+09:00"}

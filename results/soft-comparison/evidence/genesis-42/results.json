@@ -1,0 +1,105 @@
+{
+  "status": "evaluated",
+  "simulator": "genesis",
+  "genesis_backend": "metal",
+  "ros_connected": true,
+  "policy_device": "mps:0",
+  "model_id": "HuggingFaceVLA/smolvla_libero",
+  "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "trained_for_this_task": false,
+  "model_outputs_used": [
+    "closure_trigger"
+  ],
+  "policy_evaluated": true,
+  "soft_model": "FEM_linear_corotated",
+  "gripper_control": "contact_assisted",
+  "success": false,
+  "results": [
+    {
+      "food": "egg",
+      "success": false,
+      "reason": "lift_failed",
+      "attempts": 3,
+      "model_steps": 12,
+      "assisted_steps": 130,
+      "ai_triggered_closure": true,
+      "max_deformation_rms": 0.0002097465095394311
+    },
+    {
+      "food": "fish_cake",
+      "success": false,
+      "reason": "transfer_failed",
+      "attempts": 2,
+      "model_steps": 7,
+      "assisted_steps": 35,
+      "ai_triggered_closure": true,
+      "max_deformation_rms": 0.0017056382599869146
+    }
+  ],
+  "ingredients": {
+    "egg": {
+      "position": [
+        -0.12661219026587053,
+        -0.22752269821868967,
+        0.8311261778168716
+      ],
+      "speed": 2.980232056870591e-05,
+      "finger_contacts": false,
+      "stable_steps": 0,
+      "bounds_min": [
+        -0.1497764140367508,
+        -0.2521161735057831,
+        0.8160001039505005
+      ],
+      "bounds_max": [
+        -0.10359445214271545,
+        -0.2031371146440506,
+        0.8493784666061401
+      ],
+      "grasp_quaternion": [
+        0.0,
+        0.8994392440247266,
+        -0.437045817172786,
+        0.0
+      ],
+      "half_width": 0.020094056504951635,
+      "left_load": 4.44760416939971e-06,
+      "right_load": 1.5999233937691315e-07,
+      "deformation_rms": 0.0002039916497036296,
+      "vertex_count": 377,
+      "contact_kind": "vertex_proximity_and_drive_force"
+    },
+    "fish_cake": {
+      "position": [
+        -0.06452770328614861,
+        -0.01074500145705315,
+        1.0557320259511471
+      ],
+      "speed": 0.012810383242617678,
+      "finger_contacts": false,
+      "stable_steps": 0,
+      "bounds_min": [
+        -0.08245719969272614,
+        -0.037730298936367035,
+        1.030057430267334
+      ],
+      "bounds_max": [
+        -0.04654775559902191,
+        0.01618272066116333,
+        1.0911945104599
+      ],
+      "grasp_quaternion": [
+        0.0,
+        0.777848629488253,
+        -0.6284516764264748,
+        0.0
+      ],
+      "half_width": 0.014644961825856664,
+      "left_load": 4.44760416939971e-06,
+      "right_load": 1.5999233937691315e-07,
+      "deformation_rms": 0.0006942338863042423,
+      "vertex_count": 320,
+      "contact_kind": "vertex_proximity_and_drive_force"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "os": "Darwin",
+  "macos_version": "26.6.2",
+  "torch_version": "2.14.1",
+  "mps_built": true,
+  "mps_available": false,
+  "metal_device_visible": false
+}

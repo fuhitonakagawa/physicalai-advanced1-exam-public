@@ -1,0 +1,62 @@
+{
+  "physical_task_evaluated": true,
+  "device": "cpu",
+  "renderer": "ray",
+  "control": "hybrid",
+  "grasp_control": "gripper",
+  "model_id": "HuggingFaceVLA/smolvla_libero",
+  "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "trained_for_this_task": false,
+  "model_outputs_used": [
+    "gripper"
+  ],
+  "tasks": [
+    {
+      "food": "egg",
+      "instruction": "pick up the egg"
+    },
+    {
+      "food": "fish_cake",
+      "instruction": "pick up the fish cake"
+    }
+  ],
+  "results": [
+    {
+      "food": "egg",
+      "success": true,
+      "reason": "served",
+      "inference_steps": 14,
+      "contact_candidate": true,
+      "lift_verified": true
+    },
+    {
+      "food": "fish_cake",
+      "success": true,
+      "reason": "served",
+      "inference_steps": 7,
+      "contact_candidate": true,
+      "lift_verified": true
+    }
+  ],
+  "success": true,
+  "ingredients": {
+    "egg": {
+      "served": true,
+      "lifted": true,
+      "position": [
+        -0.1257624805290606,
+        -0.02943298384801529,
+        0.8876554560408249
+      ]
+    },
+    "fish_cake": {
+      "served": true,
+      "lifted": true,
+      "position": [
+        -0.0630415562734662,
+        0.030469732822267084,
+        0.8828899232472394
+      ]
+    }
+  }
+}

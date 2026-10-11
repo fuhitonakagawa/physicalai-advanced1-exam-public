@@ -1,0 +1,107 @@
+{
+  "simulator": "mujoco",
+  "soft_model": "flex_trilinear_elasticity",
+  "policy_evaluated": true,
+  "policy_device": "cpu",
+  "model_id": "HuggingFaceVLA/smolvla_libero",
+  "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "model_outputs_used": [
+    "closure_trigger"
+  ],
+  "gripper_control": "contact_assisted",
+  "seed": 42,
+  "episode_complete": true,
+  "success": true,
+  "results": [
+    {
+      "food": "egg",
+      "success": true,
+      "reason": "served",
+      "attempts": 1,
+      "model_steps": 1,
+      "assisted_steps": 56,
+      "ai_triggered_closure": true,
+      "max_deformation_rms": 0.0007132844688813175
+    },
+    {
+      "food": "fish_cake",
+      "success": true,
+      "reason": "served",
+      "attempts": 1,
+      "model_steps": 1,
+      "assisted_steps": 43,
+      "ai_triggered_closure": true,
+      "max_deformation_rms": 0.0016550684513544768
+    }
+  ],
+  "ingredients": {
+    "egg": {
+      "position": [
+        -0.06707521073269167,
+        -0.04158736198663568,
+        0.8876264876983446
+      ],
+      "speed": 1.0168473734879392e-05,
+      "finger_contacts": false,
+      "stable_steps": 675,
+      "bounds_min": [
+        -0.09065359661208977,
+        -0.06466699091112683,
+        0.8703673092463988
+      ],
+      "bounds_max": [
+        -0.043507196242876855,
+        -0.018503784887585435,
+        0.90488615945633
+      ],
+      "grasp_quaternion": [
+        0.0,
+        0.9266618270939547,
+        -0.37589607367847505,
+        0.0
+      ],
+      "half_width": 0.019663005611525446,
+      "left_load": 0.0,
+      "right_load": 0.0,
+      "deformation_rms": 0.0001437627654277049,
+      "vertex_count": 99,
+      "contact_kind": "flex_contact_force"
+    },
+    "fish_cake": {
+      "position": [
+        -0.05962563446868513,
+        0.032027734133709344,
+        0.8833378662706289
+      ],
+      "speed": 7.41248669621445e-05,
+      "finger_contacts": false,
+      "stable_steps": 46,
+      "bounds_min": [
+        -0.0841030216868075,
+        0.0075466914860988854,
+        0.8704683354762627
+      ],
+      "bounds_max": [
+        -0.03514663806414753,
+        0.056508496697110965,
+        0.8962124788360557
+      ],
+      "grasp_quaternion": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "half_width": 0.02448090260550604,
+      "left_load": 0.0,
+      "right_load": 0.0,
+      "deformation_rms": 0.00013614806201547432,
+      "vertex_count": 99,
+      "contact_kind": "flex_contact_force"
+    }
+  },
+  "max_deformation_rms": {
+    "egg": 0.0007132844688813175,
+    "fish_cake": 0.0016550684513544768
+  }
+}

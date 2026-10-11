@@ -1,0 +1,11 @@
+{
+  "device": "cpu",
+  "renderer": "ray",
+  "model_id": "HuggingFaceVLA/smolvla_libero",
+  "model_revision": "6721902bc4d61e50a3bfdb11dfb4cb626f05d102",
+  "log_level": "INFO",
+  "seed": 42,
+  "max_steps": 400,
+  "action_steps": 10,
+  "denoising_steps": 10
+}

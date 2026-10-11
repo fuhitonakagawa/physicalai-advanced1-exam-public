@@ -1,0 +1,33 @@
+{
+  "duration_seconds": 163.85,
+  "chapters": [
+    {
+      "title": "01 全推論",
+      "seed": 42,
+      "start_seconds": 6.0,
+      "duration_seconds": 20.05,
+      "file": "videos/full.mp4"
+    },
+    {
+      "title": "02 ルール＋推論 / 試行1",
+      "seed": 42,
+      "start_seconds": 29.05,
+      "duration_seconds": 41.7,
+      "file": "videos/hybrid-42.mp4"
+    },
+    {
+      "title": "03 ルール＋推論 / 試行2",
+      "seed": 43,
+      "start_seconds": 73.75,
+      "duration_seconds": 36.55,
+      "file": "videos/hybrid-43.mp4"
+    },
+    {
+      "title": "04 ルール＋推論 / 試行3",
+      "seed": 44,
+      "start_seconds": 113.3,
+      "duration_seconds": 41.55,
+      "file": "videos/hybrid-44.mp4"
+    }
+  ]
+}
